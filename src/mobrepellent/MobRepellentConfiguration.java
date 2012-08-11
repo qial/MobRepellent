@@ -131,6 +131,10 @@ public class MobRepellentConfiguration
 			return MobRepellerStrength.MEDIUM;
 		else if( mat == getBlockType( "large" ) )
 			return MobRepellerStrength.LARGE;
+		else if( mat == getBlockType( "xlarge" ) )
+			return MobRepellerStrength.XLARGE;
+		else if( mat == getBlockType( "mini" ) )
+			return MobRepellerStrength.MINI;
 		/*else if( config.getInt( "block_id", -1 ) != -1 )
 		{
 			int largeId = config.getInt( "block_id", 57 );
@@ -179,6 +183,14 @@ public class MobRepellentConfiguration
 			( getBlockDamage( "large" ) == -1 ||
 			blockData == getBlockDamage( "large" )  ) )
 			return config.getInt( "Radius.large", 50 );
+		else if( mat == getBlockType( "xlarge" ) &&
+			( getBlockDamage( "xlarge" ) == -1 ||
+			blockData == getBlockDamage( "xlarge" ) ) )
+			return config.getInt( "Radius.xlarge", 100);
+		else if( mat == getBlockType( "mini" ) &&
+				( getBlockDamage( "mini" ) == -1 ||
+				blockData == getBlockDamage( "mini" ) ) )
+				return config.getInt( "Radius.mini", 6);
 		
 		return -1;
 	}
@@ -231,6 +243,10 @@ public class MobRepellentConfiguration
 			id = getItemType( "BlockID.medium", 41 )[0];
 		else if( size.equals( "large" ) )
 			id = getItemType( "BlockID.large", 57 )[0];
+		else if( size.equals( "xlarge" ) )
+			id = getItemType( "BlockID.xlarge", 133 )[0];
+		else if( size.equals( "mini" ) )
+			id = getItemType( "BlockID.mini", 20)[0];
 		else
 			id = 57;
 		
@@ -288,6 +304,10 @@ public class MobRepellentConfiguration
 			damage = getItemType( "BlockID.medium", 41 )[1];
 		else if( size.equals( "large" ) )
 			damage = getItemType( "BlockID.large", 57 )[1];
+		else if( size.equals( "xlarge" ) )
+			damage = getItemType( "BlockID.xlarge", 133)[1];
+		else if( size.equals( "mini" ) )
+			damage = getItemType( "BlockID.mini", 20)[1];
 		
 		return damage;
 	}

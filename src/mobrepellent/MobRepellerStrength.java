@@ -2,7 +2,7 @@ package mobrepellent;
 
 public enum MobRepellerStrength
 {
-	SMALL(1), MEDIUM(2), LARGE(3), INVALID(0);
+	SMALL(1), MEDIUM(2), LARGE(3), XLARGE(4), MINI(5), INVALID(0);
 	
 	private final int size;
 	
@@ -21,6 +21,10 @@ public enum MobRepellerStrength
 				return "medium";
 			case 3:
 				return "large";
+			case 4:
+				return "xlarge";
+			case 5:
+				return "mini";
 			default:
 				return "invalid";
 		}

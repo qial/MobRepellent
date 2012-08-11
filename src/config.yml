@@ -12,14 +12,18 @@
 #                the link given above). If left empty, will repel all hostile
 #                mobs and all neutral if "repel_neutral" is true.
 Radius:
+  mini: 6
   small: 20
   medium: 30
   large: 50
+  xlarge: 100
   ignore_below: false
 BlockID:
+  mini: 20
   small: 42
   medium: 41
   large: 57
+  xlarge: 133
 Mobs:
   repel_neutral: false
   list:
