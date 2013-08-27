@@ -1,3 +1,19 @@
+MobRepellent v0.8.0 - a Minecraft Forge plugin
+
+This is a re-write and Minecraft Forge port of Will Pall's fantastic MobRepellent 
+Minecraft plugin. The Forge code is heavily based on Havvy's Generic Mod tutorial.
+(http://www.minecraftforge.net/wiki/Generic_Mod)
+
+The original MobRepellent mod was written for Bukkit, and Will Pall released the 
+source on Github. I 
+had forked it and made some modifications while using it on my own Minecraft 
+server. I made the decision to transition my server from Bukkit to Forge, but
+the active players have requested that we keep this plugin, so I'm making a
+forge version and extending the code he originally wrote.
+
+Old README kept for posterity
+-----------------------------
+
 MobRepellent v0.7.2 - a Bukkit plugin
 
 * What is MobRepellent?
