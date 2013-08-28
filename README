@@ -1,7 +1,8 @@
-MobRepellent v0.8.0f - a Minecraft Forge plugin
+MobRepellent2 v0.0.1 - a Minecraft Forge plugin
 
 This is a re-write and Minecraft Forge port of Will Pall's fantastic MobRepellent 
-Minecraft plugin. The Forge code is heavily based on Havvy's Generic Mod tutorial.
+Minecraft plugin. (http://github.com/WillPall/MobRepellent) The Forge code is 
+heavily based on Havvy's Generic Mod tutorial.
 (http://www.minecraftforge.net/wiki/Generic_Mod) This mod is still heavily in
 development and won't yet run on a server.
 
@@ -10,7 +11,18 @@ source on Github. I
 had forked it and made some modifications while using it on my own Minecraft 
 server. I made the decision to transition my server from Bukkit to Forge, but
 the active players have requested that we keep this plugin, so I'm making a
-forge version and extending the code he originally wrote.
+forge version and modifying the code he originally wrote.
+
+The biggest change of this new version is that repellers will now be an item.
+Forge Modloader does not have support for watching block placement events, so
+that option is out. I like the requirements of needing 7 full blocks, however.
+This version will have a special item for each repeller size type. It will be
+reversibly craftable from 7 blocks.
+
+Version history:
+
+MobRepellent2 v0.0.1
+    - First forge mod version.
 
 Old README kept for posterity
 -----------------------------
