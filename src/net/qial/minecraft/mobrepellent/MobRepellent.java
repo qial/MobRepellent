@@ -94,11 +94,16 @@ public class MobRepellent {
         initPacketHandling();
         initPlants();
         initWorldGen();
+        initSpawnHandlers();
     }
 
     @EventHandler
     public void postInit (FMLPostInitializationEvent event) {
         // Stub Method
+    }
+    
+    private void initSpawnHandlers() {
+    	MinecraftForge.EVENT_BUS.register(new SpawnHandler());
     }
 
     private void initCraftingAndSmelting () {
