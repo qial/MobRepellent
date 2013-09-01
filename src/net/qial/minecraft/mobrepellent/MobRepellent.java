@@ -45,7 +45,7 @@ public class MobRepellent {
 //    public final static Block genericOre = new GenericOre(501, 1);
     // End Basic Blocks
 	
-	public static final Block glassRepeller = new RepellerBlock(600, Material.glass)
+	public static final Block coalRepeller = new RepellerBlock(600, Material.glass)
 			.setStepSound(Block.soundGlassFootstep)
 			.setUnlocalizedName("glassRepeller");
 	public static final Block ironRepeller = new RepellerBlock(601, Material.iron)
@@ -133,14 +133,14 @@ public class MobRepellent {
 //        ItemStack gravelStack = new ItemStack(Block.gravel);
 //        ItemStack cobbleStack = new ItemStack(Block.cobblestone);
     	// set up item stacks for repeller crafting
-    	ItemStack glassStack = new ItemStack(Block.glass);
+    	ItemStack coalStack = new ItemStack(Block.glass);
     	ItemStack ironStack = new ItemStack(Block.blockIron);
     	ItemStack goldStack = new ItemStack(Block.blockGold);
     	ItemStack diamondStack = new ItemStack(Block.blockDiamond);
     	ItemStack emeraldStack = new ItemStack(Block.blockEmerald);
     	
     	// set up reverse stacks for shapeless crafting
-    	ItemStack glassStack7 = new ItemStack(Block.glass,7);
+    	ItemStack coalStack7 = new ItemStack(Block.glass,7);
     	ItemStack ironStack7 = new ItemStack(Block.blockIron,7);
     	ItemStack goldStack7 = new ItemStack(Block.blockGold,7);
     	ItemStack diamondStack7 = new ItemStack(Block.blockDiamond,7);
@@ -165,13 +165,13 @@ public class MobRepellent {
 //                new ItemStack(Item.bed), 0.1f);
     	
     	// add repeller crafting
-    	GameRegistry.addRecipe(new ItemStack(glassRepeller), " x ", "xxx", "xxx", 'x', glassStack);
+    	GameRegistry.addRecipe(new ItemStack(coalRepeller), " x ", "xxx", "xxx", 'x', coalStack);
     	GameRegistry.addRecipe(new ItemStack(ironRepeller), " x ", "xxx", "xxx", 'x', ironStack);
     	GameRegistry.addRecipe(new ItemStack(goldRepeller), " x ", "xxx", "xxx", 'x', goldStack);
     	GameRegistry.addRecipe(new ItemStack(diamondRepeller), " x ", "xxx", "xxx", 'x', diamondStack);
     	GameRegistry.addRecipe(new ItemStack(emeraldRepeller), " x ", "xxx", "xxx", 'x', emeraldStack);
     	
-    	GameRegistry.addShapelessRecipe(glassStack7, glassRepeller);
+    	GameRegistry.addShapelessRecipe(coalStack7, coalRepeller);
     	GameRegistry.addShapelessRecipe(ironStack7, ironRepeller);
     	GameRegistry.addShapelessRecipe(goldStack7, goldRepeller);
     	GameRegistry.addShapelessRecipe(diamondStack7, diamondRepeller);
@@ -186,9 +186,9 @@ public class MobRepellent {
 
     private void initBasicBlocks () {
     	
-    	GameRegistry.registerBlock(glassRepeller, "glassRepeller");
-    	LanguageRegistry.addName(glassRepeller, "Glass Mob Repeller");
-    	MinecraftForge.setBlockHarvestLevel(glassRepeller, "pickaxe", 1);
+    	GameRegistry.registerBlock(coalRepeller, "coalRepeller");
+    	LanguageRegistry.addName(coalRepeller, "Coal Mob Repeller");
+    	MinecraftForge.setBlockHarvestLevel(coalRepeller, "pickaxe", 1);
     	
     	GameRegistry.registerBlock(ironRepeller, "ironRepeller");
     	LanguageRegistry.addName(ironRepeller, "Iron Mob Repeller");
